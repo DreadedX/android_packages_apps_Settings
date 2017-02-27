@@ -118,6 +118,13 @@
                 android:title="@string/mod_version"
                 android:summary="@string/mod_version_default" />
 
+        <!-- Tweak version -->
+        <Preference android:key="tweak_version"
+                android:enabled="false"
+                android:shouldDisableView="false"
+                android:title="Dreaded tweaks version"
+                android:summary="Unknown" />
+
         <!-- CyanogenMod API Version -->
         <Preference android:key="mod_api_level"
                 android:enabled="false"
