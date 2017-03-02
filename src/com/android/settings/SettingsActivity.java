@@ -235,6 +235,10 @@ public class SettingsActivity extends SettingsDrawerActivity
 
     private static final String ACTION_TIMER_SWITCH = "qualcomm.intent.action.TIMER_SWITCH";
 
+    private static final String VIPERFX_FRAGMENT = "com.android.settings.ViperFX";
+    private static final String VIPERFX_FRAGMENT = "com.android.settings.Substratum";
+    private static final String VIPERFX_FRAGMENT = "com.android.settings.Magisk";
+
     private String mFragmentClass;
     private String mActivityAction;
 
@@ -1044,6 +1048,27 @@ public class SettingsActivity extends SettingsDrawerActivity
      */
     private Fragment switchToFragment(String fragmentName, Bundle args, boolean validate,
             boolean addToBackStack, int titleResId, CharSequence title, boolean withTransition) {
+        if (VIPERFX_FRAGMENT.equals(fragmentName)) {
+            Intent viperFXIntent = new Intent();
+            viperFXIntent.setClassName("com.audlabs.viperfx", "com.audlabs.viperfx.main.MainActivity");
+            startActivity(viperFXIntent);
+            finish();
+            return null;
+        }
+        if (SUBSTRATUM_FRAGMENT.equals(fragmentName)) {
+            Intent substratumIntent = new Intent();
+            substratumIntent.setClassName("projekt.substratum", "projekt.substratum.LaunchActivity");
+            startActivity(substratumIntent);
+            finish();
+            return null;
+        }
+        if (MAGISK_FRAGMENT.equals(fragmentName)) {
+            Intent magiskIntent = new Intent();
+            magiskIntent.setClassName("com.topjohnwu.magisk", "com.topjohnwu.magisk.SplashActivity");
+            startActivity(magiskIntent);
+            finish();
+            return null;
+        }
         if (validate && !isValidFragment(fragmentName)) {
             throw new IllegalArgumentException("Invalid fragment for this activity: "
                     + fragmentName);
