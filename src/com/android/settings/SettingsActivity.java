@@ -236,8 +236,8 @@ public class SettingsActivity extends SettingsDrawerActivity
     private static final String ACTION_TIMER_SWITCH = "qualcomm.intent.action.TIMER_SWITCH";
 
     private static final String VIPERFX_FRAGMENT = "com.android.settings.ViperFX";
-    private static final String VIPERFX_FRAGMENT = "com.android.settings.Substratum";
-    private static final String VIPERFX_FRAGMENT = "com.android.settings.Magisk";
+    private static final String SUBSTRATUM_FRAGMENT = "com.android.settings.Substratum";
+    private static final String MAGISK_FRAGMENT = "com.android.settings.Magisk";
 
     private String mFragmentClass;
     private String mActivityAction;
