@@ -234,6 +234,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private static final String OTA_DISABLE_AUTOMATIC_UPDATE_KEY = "ota_disable_automatic_update";
 
     private static final String DEVELOPMENT_TOOLS = "development_tools";
+
     private static final String FORCE_AUTHORIZE_SUBSTRATUM_PACKAGES = "force_authorize_substratum_packages";
 
     private static final int RESULT_DEBUG_APP = 1000;
@@ -1895,11 +1896,10 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private void writeUsbConfigurationOption(Object newValue) {
         UsbManager manager = (UsbManager)getActivity().getSystemService(Context.USB_SERVICE);
         String function = newValue.toString();
-        manager.setCurrentFunction(function);
         if (function.equals("none")) {
-            manager.setUsbDataUnlocked(false);
+            manager.setCurrentFunction(function, false);
         } else {
-            manager.setUsbDataUnlocked(true);
+            manager.setCurrentFunction(function, true);
         }
     }
 
