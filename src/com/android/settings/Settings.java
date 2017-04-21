@@ -157,9 +157,15 @@ public class Settings extends SettingsActivity {
     public static class WifiAPITestActivity extends SettingsActivity { /* empty */ }
     public static class WifiInfoActivity extends SettingsActivity { /* empty */ }
 
+	// Tweaks
+    public static class SubstratumActivity extends SettingsActivity { /* empty */ }
+    public static class ViperFXActivity extends SettingsActivity { /* empty */ }
+    public static class MagsikActivity extends SettingsActivity { /* empty */ }
+
     // Categories.
     public static class WirelessSettings extends SettingsActivity { /* empty */ }
     public static class DeviceSettings extends SettingsActivity { /* empty */ }
     public static class PersonalSettings extends SettingsActivity { /* empty */ }
+    public static class TweakSettings extends SettingsActivity { /* empty */ }
     public static class SystemSettings extends SettingsActivity { /* empty */ }
 }
