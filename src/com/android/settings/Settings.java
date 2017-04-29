@@ -160,7 +160,7 @@ public class Settings extends SettingsActivity {
 	// Tweaks
     public static class SubstratumActivity extends SettingsActivity { /* empty */ }
     public static class ViperFXActivity extends SettingsActivity { /* empty */ }
-    public static class MagsikActivity extends SettingsActivity { /* empty */ }
+    public static class MagiskActivity extends SettingsActivity { /* empty */ }
 
     // Categories.
     public static class WirelessSettings extends SettingsActivity { /* empty */ }

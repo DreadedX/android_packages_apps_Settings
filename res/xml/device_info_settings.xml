@@ -141,7 +141,7 @@
         <Preference android:key="tweak_version"
                 android:enabled="false"
                 android:shouldDisableView="false"
-                android:title="DX Tweaks"
+                android:title="Tweaks version"
                 android:summary="@string/mod_version_default" />
 
         <!-- Device FCC equipment id -->

@@ -57,7 +57,7 @@
     <!-- Settings main menu category heading. System (Updates, data, accessibility, about phone). [CHAR LIMIT=40] -->
     <string name="header_category_system">System</string>
     <!-- Tweak settings -->
-    <string name="header_category_system">Tweaks</string>
+    <string name="header_category_tweaks">Tweaks</string>
 
     <!-- Data Connection Enable. Only shown in diagnostic screen, so precise translation is not needed. -->
     <string name="radio_info_data_connection_enable">Enable Data Connection</string>

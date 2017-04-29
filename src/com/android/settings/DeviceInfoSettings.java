@@ -151,7 +151,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 cyanogenmod.os.Build.CYANOGENMOD_DISPLAY_VERSION);
         findPreference(KEY_MOD_VERSION).setEnabled(true);
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
-        setValueSummary(KEY_MOD_BUILD_DATE, "ro.dx.version");
+        setValueSummary(KEY_TWEAK_VERSION, "ro.dx.version");
         setExplicitValueSummary(KEY_MOD_API_LEVEL, constructApiLevelString());
         findPreference(KEY_MOD_API_LEVEL).setEnabled(true);
 
