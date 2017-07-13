@@ -137,12 +137,16 @@
                 settings:allowDividerAbove="true"
                 settings:allowDividerBelow="true" />
 
-        <!-- Tweak version -->
-        <Preference android:key="tweak_version"
+        <!-- FiveTen version -->
+        <com.android.settings.DividerPreference
+                android:key="tweak_version"
                 android:enabled="false"
+                android:selectable="false"
                 android:shouldDisableView="false"
-                android:title="Tweaks version"
-                android:summary="@string/mod_version_default" />
+                android:title="@string/tweaks_version"
+                android:summary="@string/tweaks_version_default"
+                settings:allowDividerAbove="true"
+                settings:allowDividerBelow="true" />
 
         <!-- Device FCC equipment id -->
         <com.android.settings.DividerPreference

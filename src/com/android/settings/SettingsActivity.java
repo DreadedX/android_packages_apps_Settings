@@ -238,6 +238,7 @@ public class SettingsActivity extends SettingsDrawerActivity
 	private static final String SUBSTRATUM_FRAGMENT = "com.android.settings.Substratum";
 	private static final String VIPERFX_FRAGMENT = "com.android.settings.ViperFX";
 	private static final String MAGISK_FRAGMENT = "com.android.settings.Magisk";
+	private static final String TWEAKS_FRAGMENT = "com.android.settings.Tweaks";
 
     private String mFragmentClass;
     private String mActivityAction;
@@ -1065,6 +1066,13 @@ public class SettingsActivity extends SettingsDrawerActivity
 		if (MAGISK_FRAGMENT.equals(fragmentName)) {
 			Intent intent = new Intent();
 			intent.setClassName("com.topjohnwu.magisk", "com.topjohnwu.magisk.SplashActivity");
+			startActivity(intent);
+			finish();
+			return null;
+		}
+		if (TWEAKS_FRAGMENT.equals(fragmentName)) {
+			Intent intent = new Intent();
+			intent.setClassName("nl.mtgames.tweaks", "nl.mtgames.tweaks.MainActivity");
 			startActivity(intent);
 			finish();
 			return null;
